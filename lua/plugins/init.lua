@@ -6,6 +6,7 @@ return {
     },
     "rebelot/kanagawa.nvim",
     "marko-cerovac/material.nvim",
+    { "rose-pine/neovim", name = "rose-pine" },
 
     -- LSP
     "neovim/nvim-lspconfig",

@@ -7,4 +7,5 @@ vim.opt.rtp:prepend(lazypath)
 require("configs")
 require("lazy").setup("plugins")
 
-vim.cmd([[colorscheme catppuccin]])
+vim.cmd("colorscheme rose-pine")
+-- vim.cmd([[colorscheme rose-pine]])
