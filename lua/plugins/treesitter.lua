@@ -4,18 +4,19 @@ return{
         require'nvim-treesitter.configs'.setup {
           -- A list of parser names, or "all"
           ensure_installed = { "c", "lua" },
-          ignore_installed = { "help" },
+          ignore_installed = { "help", "vim", "vimdoc", "query" },
 
           -- Install parsers synchronously (only applied to `ensure_installed`)
           sync_install = false,
 
           -- Automatically install missing parsers when entering buffer
           -- Recommendation: set to false if you don't have `tree-sitter` CLI installed locally
-          auto_install = true,
+          auto_install = false,
 
           highlight = {
             -- `false` will disable the whole extension
             enable = true,
+            disable = { "help", "vim", "vimdoc", "query" },
 
             -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
             -- Set this to `true` if you depend on 'syntax' being enabled (like for indentation).

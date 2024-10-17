@@ -4,8 +4,11 @@ return {
         priority = 1000,
         lazy = false,
     },
-    "rebelot/kanagawa.nvim",
-    "marko-cerovac/material.nvim",
+    {"folke/tokyonight.nvim",
+        lazy = false,
+        priority = 1000,
+        opts = {},
+    },
     { "rose-pine/neovim", name = "rose-pine" },
 
     -- LSP
