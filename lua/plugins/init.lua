@@ -1,15 +1,6 @@
 return {
     -- Colorscheme
-    {"catppuccin/nvim",
-        priority = 1000,
-        lazy = false,
-    },
-    {"folke/tokyonight.nvim",
-        lazy = false,
-        priority = 1000,
-        opts = {},
-    },
-    { "rose-pine/neovim", name = "rose-pine" },
+    { "dracula/vim", name = "dracula"},
 
     -- LSP
     "neovim/nvim-lspconfig",
