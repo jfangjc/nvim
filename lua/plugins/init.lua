@@ -1,5 +1,5 @@
 return {
-    -- Colorscheme
+
     { "dracula/vim", name = "dracula"},
 
     -- LSP
@@ -18,14 +18,23 @@ return {
     "williamboman/mason-lspconfig.nvim",
 
     -- Other plugins
+    "nvim-tree/nvim-tree.lua",
     {"nvim-lualine/lualine.nvim", dependencies = { "nvim-tree/nvim-web-devicons", lazy = true}},
     "nvim-lua/plenary.nvim",
     "nvim-telescope/telescope.nvim",
     {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
-    "tpope/vim-fugitive",
     {"akinsho/bufferline.nvim", version = "v3.*", dependencies = 'nvim-tree/nvim-web-devicons'},
     {"ThePrimeagen/harpoon", branch = "harpoon2", requires = {{"nvim-lua/plenary.nvim"}}},
     {"folke/noice.nvim", event = "VeryLazy", dependencies = { "MunifTanjim/nui.nvim" }}, 
+    {
+        "iamcco/markdown-preview.nvim",
+        event = "VeryLazy",
+        cmd = { 'MarkdownPreviewToggle', 'MarkdownPreview', 'MarkdownPreviewStop' },
+        ft = { 'markdown' },
+        build = function()
+            vim.fn['mkdp#util#install']()
+        end,
+    },
 }
 
 
