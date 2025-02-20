@@ -18,23 +18,24 @@ return {
     "williamboman/mason-lspconfig.nvim",
 
     -- Other plugins
-    "nvim-tree/nvim-tree.lua",
-    {"nvim-lualine/lualine.nvim", dependencies = { "nvim-tree/nvim-web-devicons", lazy = true}},
+    {
+        "nvim-neo-tree/neo-tree.nvim",
+        branch = "v3.x",
+        dependencies = {
+            "nvim-lua/plenary.nvim",
+            "MunifTanjim/nui.nvim",
+        }
+    },
+    "nvim-lualine/lualine.nvim",
     "nvim-lua/plenary.nvim",
     "nvim-telescope/telescope.nvim",
     {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
-    {"akinsho/bufferline.nvim", version = "v3.*", dependencies = 'nvim-tree/nvim-web-devicons'},
     {"ThePrimeagen/harpoon", branch = "harpoon2", requires = {{"nvim-lua/plenary.nvim"}}},
     {"folke/noice.nvim", event = "VeryLazy", dependencies = { "MunifTanjim/nui.nvim" }}, 
     {
-        "iamcco/markdown-preview.nvim",
-        event = "VeryLazy",
-        cmd = { 'MarkdownPreviewToggle', 'MarkdownPreview', 'MarkdownPreviewStop' },
-        ft = { 'markdown' },
-        build = function()
-            vim.fn['mkdp#util#install']()
-        end,
-    },
+        'MeanderingProgrammer/render-markdown.nvim',
+        dependencies = { 'nvim-treesitter/nvim-treesitter'},
+    }
 }
 
 

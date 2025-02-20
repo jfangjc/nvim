@@ -45,6 +45,11 @@ return {
               { name = 'cmdline' }
             })
         })
+        cmp.setup({
+            sources = cmp.config.sources({
+                { name = 'render-markdown' },
+            }),
+        })
 
         local capabilities = require('cmp_nvim_lsp').default_capabilities()
         require('lspconfig')['clangd'].setup {
