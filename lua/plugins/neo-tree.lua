@@ -1,9 +1,9 @@
 return {
     "nvim-neo-tree/neo-tree.nvim",
-    config = function() 
+    config = function()
         require("neo-tree").setup({
             window = {
-                width = 25,
+                width = 30,
                 position = "left",
             },
             git_status = {
