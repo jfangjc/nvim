@@ -8,8 +8,7 @@ return {
             ['<C-k>'] = { 'select_prev', 'fallback' },
             ['<C-j>'] = { 'select_next', 'fallback' },
             ['<C-space>'] = { 'show', 'show_documentation', 'hide_documentation' },
-            ["<Esc>"] = { "hide", "fallback" },
-            ['<Tab>'] = { "select_and_accept", "fallback" },
+            ['<CR>'] = { "select_and_accept", "fallback" },
         },
         completion = {
             documentation = { auto_show = false },
