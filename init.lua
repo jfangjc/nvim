@@ -9,5 +9,5 @@ vim.opt.rtp:prepend(lazypath)
 require("configs")
 require("lazy").setup("plugins")
 
-vim.cmd("colorscheme kanagawa-wave")
+vim.cmd("colorscheme rose-pine-dawn")
 

@@ -1,8 +1,9 @@
 return {
 
     { "dracula/vim", name = "dracula"},
-    { "nyoom-engineering/oxocarbon.nvim", name = "oxocarbon" },
     { "rebelot/kanagawa.nvim", name = "kanagawa" }, 
+    { "shaunsingh/nord.nvim", name = "nord" },
+    { "rose-pine/neovim", name = "rose-pine" },
 
     -- LSP
     "neovim/nvim-lspconfig",
