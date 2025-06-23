@@ -1,5 +1,4 @@
 return {
-
     { "dracula/vim", name = "dracula"},
     { "rebelot/kanagawa.nvim", name = "kanagawa" }, 
     { "shaunsingh/nord.nvim", name = "nord" },
@@ -22,7 +21,6 @@ return {
             "MunifTanjim/nui.nvim",
         }
     },
-    "nvim-lualine/lualine.nvim",
     "nvim-lua/plenary.nvim",
     "nvim-telescope/telescope.nvim",
     {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},

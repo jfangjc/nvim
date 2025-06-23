@@ -1,6 +1,6 @@
 vim.g.mapleader = " "
 
-vim.keymap.set("n", "<leader>f", "<Cmd>Neotree toggle<CR>")
+vim.keymap.set("n", "<leader>f", "<Cmd>Neotree toggle reveal<CR>")
 vim.keymap.set("n", "<leader>d", vim.diagnostic.open_float)
 
 vim.keymap.set("n", "<C-p>", ":")

@@ -19,3 +19,4 @@ vim.opt.termguicolors = true
 
 vim.opt.mouse = "a"
 
+vim.opt.laststatus=0

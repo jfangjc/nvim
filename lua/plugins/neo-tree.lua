@@ -45,6 +45,9 @@ return {
                     hide_dotfiles = false,
                     hide_gitignored = true,
                 },
+                follow_current_file = {
+                    enabled = true,
+                },
             },
         })
     end
